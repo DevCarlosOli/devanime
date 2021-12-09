@@ -1,0 +1,33 @@
+/*estilo de fonte*/
+@font-face {
+    font-family: Revamped;
+    src: url(../fonts/Revamped.otf);
+}
+/*reset de pagina*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*imagem de fundo do cabeçalho*/
+#cabecalho{
+    background-image: url(../imagens/fundo-cabecalho.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+}
+/*estilo para fonte menu*/
+#menu{
+    font-family: Revamped;
+    font-size: 11px;
+}
+
+#menu a:hover{
+    color: yellow !important;
+}
+
+.downloadApp{
+    font-family: Revamped;
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+}
