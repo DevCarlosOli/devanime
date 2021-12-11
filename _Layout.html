@@ -10,6 +10,7 @@
     <meta name="keywords" content="Anime, anime, ANIME, Desenho, desenho, DESENHO, Otaku, otaku, OTAKU, otacu, Otacu, OTACU, Repositorio, repositorio, REPOSITORIO, Filme, filme, FILME, Online, online, ONLINE, Animes Online, Animes online, animes online, ANIMES ONLINE, Desenhos Online, Desenhos online, desenhos online, DESENHOS ONLINE, Melhores Animes, Melhores animes, melhores animes, MELHORES ANIMES, Melhores Desenhos, Melhores desenhos, melhores desenhos, MELHORES DESENHOS, Animes do Ano, animes do ano, Animes do ano, ANIMES DO ANO, Desenhos do Ano, Desenhos do ano, desenhos do ano, DESENHOS DO ANO, lancamentos, Lancamentos, LANCAMENTOS, lançamentos, Lançamentos, LANÇAMENTOS, Dev, dev, DEV, DevAnime, Devanime, devanime, DEVANIME, Dev Anime, Dev anime, dev Anime, dev anime, DEV ANIME">
 
     <!--Area de Links-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="_css/estilo.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
@@ -18,16 +19,15 @@
 </head>
 <body>
     <div id="cabecalho" class="container-fluid">
-        <div class="container pt-4">
             <div class="row">
                 <!--div da logo-->
-                <div class="col-1">
+                <div class="col-sm-2 d-flex flex-wrap align-content-center d-flex justify-content-center">
                     <a class="navbar-brand" href="#">
-                        <img src="imagens/logo.png" alt="logo site" style="width: 130px;">
+                        <img class="logo" src="imagens/logo.png" alt="logo site">
                     </a>                    
                 </div>
                 <!--div de menu-->
-                <div class="col-8">
+                <div class="col-sm-6 d-flex flex-wrap align-content-center d-flex justify-content-center">
                     <ul id="menu" class="nav justify-content-center">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#">PARA ASSISTIR</a>
@@ -58,28 +58,40 @@
                     </ul>
                 </div>
                 <!--div para download do app-->
-                <div class="col-1">
-                    <p class="downloadApp">DOWNLOAD <br> APP</p>            
-                    IMAGENS DAS EMPRESAS DE APP
+                <div id="downloadParty" class="col-sm-2 d-flex flex-wrap align-content-center d-flex justify-content-center d-flex flex-column">
+                    <p class="downloadApp">DOWNLOAD APP</p>
+                    <a class="navbar-brand" href="#">
+                        <img src="imagens/playStoreIcon.png" class="mx-auto d-block" alt="Icone Play Store">
+                    </a>                  
+                    <a class="navbar-brand" href="#">
+                        <img src="imagens/appleStoreIcon.png" class="mx-auto d-block" alt="Icone Apple Store">
+                    </a>                    
                 </div>
                 <!--div para área de cadastro/login e busca-->
-                <div class="col-2">
-                    CADASTRO
-                    LOGIN
-
-                    BUSCAR
+                <div class="button-search col-sm-2 d-flex flex-wrap align-content-center">
+                    <div class="mx-auto">
+                        <a class="btn btn-primary btn-sm btn-block" href="#" role="button">CADASTRO</a>
+                        <a class="btn btn-primary btn-sm" href="#" role="button">LOGIN</a>
+                    </div>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-light"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
                 </div>
             </div>          
         </div>
+
+        <div class="renderBody"></div>
 
         <footer>
             <p>&copy;DevAnime - 2022</p>
         </footer>
     </div>    
 
-    <!--Area de Scripts-->    
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <!--Area de Scripts-->
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
