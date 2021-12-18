@@ -58,6 +58,13 @@
     padding: 0px 16px 0px 16px;
     cursor: pointer;
 }
+/* estilo botao de login */
+.btn-xl {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
 /*box*/
 .box{
     width: 190px;
