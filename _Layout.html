@@ -17,84 +17,53 @@
 
     <title>DevAnime</title>
 </head>
-<body>
-    <div id="cabecalho" class="container-fluid">
-            <div class="row">
-                <!--div da logo-->
-                <div class="col-sm-2 d-flex flex-wrap align-content-center d-flex justify-content-center">
-                    <a class="navbar-brand" href="#">
-                        <img class="logo" src="imagens/logo.png" alt="logo site">
-                    </a>                    
-                </div>
-                <!--div de menu-->
-                <div class="col-sm-6 d-flex flex-wrap align-content-center d-flex justify-content-center">
-                    <ul id="menu" class="nav justify-content-center">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#">PARA ASSISTIR</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item text-white" href="#">ANIMES</a></li>
-                                <li><a class="dropdown-item text-white" href="#">FILMES</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#">PARA LER</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item text-white" href="#">MANGA</a></li>
-                                <li><a class="dropdown-item text-white" href="#">LIGHT NOVEL</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">CALENDARIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">FAVORITOS</a>
-                        </li>                        
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">GENEROS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">SOBRE</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--div para download do app-->
-                <div id="downloadParty" class="col-sm-2 d-flex flex-wrap align-content-center d-flex justify-content-center d-flex flex-column">
-                    <p class="downloadApp">DOWNLOAD APP</p>
-                    <a class="navbar-brand" href="#">
-                        <img src="imagens/playStoreIcon.png" class="mx-auto d-block" alt="Icone Play Store">
-                    </a>                  
-                    <a class="navbar-brand" href="#">
-                        <img src="imagens/appleStoreIcon.png" class="mx-auto d-block" alt="Icone Apple Store">
-                    </a>                    
-                </div>
-                <!--div para área de cadastro/login e busca-->
-                <div class="button-search col-sm-2 d-flex flex-wrap align-content-center">
-                    <div class="d-flex">
-                        <a class="btn btn-outline-light mb-3" href="#" role="button">CADASTRO</a>
-                        <a class="btn btn-outline-light mb-3" href="#" role="button">LOGIN</a>
+<body style="min-width: 270px;">
+    <header>        
+        <a href="#"><img class="logo-site" src="imagens/logo.png" alt="Logo Site DevAnime"></a>
+        <nav>
+            <ul class="menu">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">PARA ASSISTIR</a>
+                    <div class="dropdown-content">
+                        <a href="#">ANIMES</a>
+                        <a href="#">FILMES / OVA's</a>
                     </div>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                        <button class="btn btn-light"><i class="fa fa-search" aria-hidden="true"></i></button>
-                    </form>
-                </div>
-            </div>          
+                </li>                
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">PARA LER</a>
+                    <div class="dropdown-content">
+                        <a href="#">MANGA</a>
+                        <a href="#">LIGHT NOVEL</a>
+                    </div>
+                </li>  
+                <li><a href="#">CALENDARIO</a></li>
+                <li><a href="#">FAVORITOS</a></li>                        
+                <li><a href="#">GENEROS</a></li>
+                <li><a href="#">SOBRE</a></li>
+            </ul>
+        </nav>
+        <div class="download">
+            <p>DOWNLOAD APP</p>
+            <span class="btn-down">
+                <a href="#"><img src="imagens/playStoreIcon.png" alt="Icone Play Store"></a>                  
+                <a href="#"><img src="imagens/appleStoreIcon.png" alt="Icone Apple Store"></a>
+            </span>
         </div>
+        <div class="buttons">
+           <button class="btn-home" type="submit"><a href="#">CADASTRO</a></button>
+           <button class="btn-home" type="submit"><a href="#">LOGIN</a></button>
+            <form action="">
+                <input class="pesquisa" type="text" name="buscar" placeholder="Buscar">
+                <button class="lupa" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+    <div class="corpo"></div>
 
-    
-        <footer>
-            <div class="row">
-                <div class="col-sm-10 d-flex flex-wrap align-content-center d-flex justify-content-center"> 
-                    <p>&copy;DevAnime - 2022</p>
-                </div>
-                <div class="col-sm-2 d-flex flex-wrap flex-row-reverse align-content-center">
-                    <div class="d-flex">
-                        <a class="btn btn-outline-light" href="#" role="button">DONATES</a>
-                    </div>
-                </div>
-            </div>    
-        </footer>
-    </div>    
+    <footer>        
+        <p class="copyright">&copy;DevAnime - 2022</p>        
+        <button class="btn-footer" type="submit"><a href="#">DONATES</a></button>               
+    </footer>   
 
     <!--Area de Scripts-->
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
