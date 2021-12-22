@@ -1,0 +1,40 @@
+/*estilo de fonte*/
+@font-face {
+    font-family: Revamped;
+    src: url(../fonts/Revamped.otf);
+}
+
+/*reset de pagina*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-color: #040428;
+}
+
+section{
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 2px 5px;    
+}
+
+section a:hover{
+    color: #ffff00;
+    transition: 0.3s;
+    font-size: 110%;
+}
+
+div{
+    padding: 5px 0;
+}
