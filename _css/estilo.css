@@ -10,6 +10,7 @@
     padding: 0;
 }
 
+
 /*estilo header*/
 header{
     position: relative;
@@ -162,10 +163,6 @@ li.dropdown {
     background-color: #3c0404;
 }
 /*fim estilo header*/
-
-.corpo{
-    height: 250px;
-}
 
 /*footer*/
 footer{
