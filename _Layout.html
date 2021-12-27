@@ -10,13 +10,20 @@
     <meta name="keywords" content="Anime, anime, ANIME, Desenho, desenho, DESENHO, Otaku, otaku, OTAKU, otacu, Otacu, OTACU, Repositorio, repositorio, REPOSITORIO, Filme, filme, FILME, Online, online, ONLINE, Animes Online, Animes online, animes online, ANIMES ONLINE, Desenhos Online, Desenhos online, desenhos online, DESENHOS ONLINE, Melhores Animes, Melhores animes, melhores animes, MELHORES ANIMES, Melhores Desenhos, Melhores desenhos, melhores desenhos, MELHORES DESENHOS, Animes do Ano, animes do ano, Animes do ano, ANIMES DO ANO, Desenhos do Ano, Desenhos do ano, desenhos do ano, DESENHOS DO ANO, lancamentos, Lancamentos, LANCAMENTOS, lançamentos, Lançamentos, LANÇAMENTOS, Dev, dev, DEV, DevAnime, Devanime, devanime, DEVANIME, Dev Anime, Dev anime, dev Anime, dev anime, DEV ANIME">
 
     <!--Area de Links-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!--Estilos externos-->
     <link rel="stylesheet" href="_css/estilo.css">
     <link rel="stylesheet" href="_css/manga.css">
+    <link rel="stylesheet" href="_css/lightNovel.css">
+    <link rel="stylesheet" href="_css/calendario.css">
+
+    <!--Favicon-->
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 
-    <title>DevAnime</title>
+    <title>DevAnime - O melhor lugar para assistir animes</title>
 </head>
 <body style="min-width: 270px;">
     <header>        
@@ -34,10 +41,10 @@
                     <a href="javascript:void(0)" class="dropbtn">PARA LER</a>
                     <div class="dropdown-content">
                         <a href="manga.html">MANGA</a>
-                        <a href="#">LIGHT NOVEL</a>
+                        <a href="lightNovel.html">LIGHT NOVEL</a>
                     </div>
                 </li>  
-                <li><a href="#">CALENDARIO</a></li>
+                <li><a href="calendario.html">CALENDARIO</a></li>
                 <li><a href="#">FAVORITOS</a></li>                        
                 <li><a href="#">GENEROS</a></li>
                 <li><a href="#">SOBRE</a></li>
@@ -66,9 +73,29 @@
     </footer>   
 
     <!--Area de Scripts-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+    </script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
 </body>
 </html>
