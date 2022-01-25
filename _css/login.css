@@ -1,0 +1,48 @@
+/*estilo de fonte*/
+@font-face {
+    font-family: Revamped;
+    src: url(../fonts/Revamped.otf);
+}
+
+/*reset de pagina*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../imagens/background-login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#formulario{
+    padding: 20px 30px;
+    background: rgba(255, 255, 255, 0.3);
+    justify-content: space-between;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    border: white solid 1px;
+    border-radius: 12px;
+}
+
+h1{
+    font-family: Revamped;
+    text-align: center;
+    color: white;
+}
+
+a{
+    font-size: smaller;
+}
+
+.copyright{
+    position: relative;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: small;
+    margin: 10px 0 10px 0;
+}

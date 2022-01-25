@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos R. de O. Filho">
+    <meta name="description" content="Site para repositorio de animes com diversos tipos de generos com diferentes datas de lancamento para alegria dos Otakus">
+    <meta name="keywords" content="Anime, anime, ANIME, Desenho, desenho, DESENHO, Otaku, otaku, OTAKU, otacu, Otacu, OTACU, Repositorio, repositorio, REPOSITORIO, Filme, filme, FILME, Online, online, ONLINE, Animes Online, Animes online, animes online, ANIMES ONLINE, Desenhos Online, Desenhos online, desenhos online, DESENHOS ONLINE, Melhores Animes, Melhores animes, melhores animes, MELHORES ANIMES, Melhores Desenhos, Melhores desenhos, melhores desenhos, MELHORES DESENHOS, Animes do Ano, animes do ano, Animes do ano, ANIMES DO ANO, Desenhos do Ano, Desenhos do ano, desenhos do ano, DESENHOS DO ANO, lancamentos, Lancamentos, LANCAMENTOS, lançamentos, Lançamentos, LANÇAMENTOS, Dev, dev, DEV, DevAnime, Devanime, devanime, DEVANIME, Dev Anime, Dev anime, dev Anime, dev anime, DEV ANIME">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="_css/cadastro.css">
+    <style>
+        select:invalid {
+            color: rgb(124, 124, 124);
+        }
+    </style>
+    <title>DevAnime - Cadastro</title>
+</head>
+<body>
+    <main class="container">
+        <div class="flex-container d-flex justify-content-end" style="height: 100vh;">       
+            <form id="formulario" class="row g-1 align-self-center">
+                <h1>CADASTRO</h1>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Primeiro Nome" name="firstname">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Sobrenome" name="lastname">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Usuário" name="username">
+                </div>
+                <div class="col-md-6">
+                    <input placeholder="Nascimento" class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="E-mail" name="email">
+                </div>
+                <div class="col-md-6">
+                    <input type="tel" class="form-control" placeholder="Whatsapp: XX9XXXXXXXX" pattern="[0-9]{2}9[0-9]{4}[0-9]{4}" name="cel">
+                </div>
+                <div class="col-md-6">
+                    <select class="form-select" aria-label="Default select example" required>
+                        <option value="" disabled selected hidden>Estado</option>
+                        <option value="1">Acre</option>
+                        <option value="2">Alagoas</option>
+                        <option value="3">Amapá</option>
+                        <option value="4">Amazonas</option>
+                        <option value="5">Bahia</option>
+                        <option value="6">Ceará</option>
+                        <option value="7">Distrito Federal</option>
+                        <option value="8">Espírito Santo</option>
+                        <option value="9">Goiás</option>
+                        <option value="10">Maranhão</option>
+                        <option value="11">Mato Grosso</option>
+                        <option value="12">Mato Grosso do Sul</option>
+                        <option value="13">Minas Gerais</option>
+                        <option value="14">Pará</option>
+                        <option value="15">Paraíba</option>
+                        <option value="16">Paraná</option>
+                        <option value="17">Pernambuco</option>
+                        <option value="18">Piauí</option>
+                        <option value="19">Rio de Janeiro</option>
+                        <option value="20">Rio Grande do Norte</option>
+                        <option value="21">Rio Grande do Sul</option>
+                        <option value="22">Rondônia</option>
+                        <option value="23">Roraima</option>
+                        <option value="24">Santa Catarina</option>
+                        <option value="25">São Paulo</option>
+                        <option value="26">Sergipe</option>
+                        <option value="27">Tocantins</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Cidade" name="city">
+                </div>
+                <div class="col-md-6">
+                    <input type="password" class="form-control" placeholder="Senha" name="pwd">
+                </div>
+                <div class="col-md-6">
+                    <input type="password" class="form-control" placeholder="Confirme a Senha" name="pwdvalid">
+                </div>
+                <div class="d-grid col-md-6">
+                    <button type="button" class="btn btn-outline-success">Salvar</button>
+                </div>
+                <div class="d-grid col-md-6">
+                    <button type="button" class="btn btn-outline-danger">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>        
+        <p class="copyright">&copy;DevAnime - 2022</p>              
+    </footer>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
